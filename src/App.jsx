@@ -1,4 +1,3 @@
-
 import Home from "./pages/home";
 import Events from "./pages/events";
 import Checkout from ".pages/checkout"
@@ -9,7 +8,6 @@ const App = () => {
     {
       path: "/",
       element: <Home />,
-
     },
     {
       path: "/events/:eventId",
@@ -20,9 +18,7 @@ const App = () => {
       elements: <Checkout />
     }
   ]);
-  return (
-    <RouterProvider router={router} />
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
