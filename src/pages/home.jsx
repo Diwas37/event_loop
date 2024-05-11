@@ -1,13 +1,19 @@
 import SearchBox from "../components/searchBox";
-import Card from "../components/Card";
 import EventCard from "../components/EventCard";
+import dummyData from "../dummy";
 
 const Home = () => {
   return (
-    <div className="container bg-blue-300 mx-auto min-h-screen ">
-      <SearchBox />
-      <EventCard />
-    </div>
+    <>
+      <div className="pt-5">
+        <SearchBox />
+      </div>
+      <div className="container mx-auto min-h-screen px-10 py-5 grid grid-cols-5 gap-6">
+        {dummyData.map((item) => (
+          <EventCard data={item} />
+        ))}
+      </div>
+    </>
   );
 };
 
