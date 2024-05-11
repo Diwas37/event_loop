@@ -1,5 +1,4 @@
 import SearchBox from "../components/searchBox";
-import Card from "../components/Card";
 import EventCard from "../components/EventCard";
 
 const Home = () => {
